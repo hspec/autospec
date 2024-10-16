@@ -64,7 +64,7 @@ executable seito
     , fsnotify ==0.4.*
     , http-client >=0.5.0
     , http-types
-    , mtl
+    , mtl >=2.3.1
     , network
     , pretty
     , process
@@ -124,7 +124,7 @@ executable sensei
     , fsnotify ==0.4.*
     , http-client >=0.5.0
     , http-types
-    , mtl
+    , mtl >=2.3.1
     , network
     , pretty
     , process
@@ -184,7 +184,7 @@ executable sensei-web
     , fsnotify ==0.4.*
     , http-client >=0.5.0
     , http-types
-    , mtl
+    , mtl >=2.3.1
     , network
     , pretty
     , process
@@ -268,7 +268,7 @@ test-suite spec
     , http-client >=0.5.0
     , http-types
     , mockery
-    , mtl
+    , mtl >=2.3.1
     , network
     , pretty
     , process
