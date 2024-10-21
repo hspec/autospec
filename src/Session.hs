@@ -64,7 +64,8 @@ withSession config args action = do
     (ghciArgs, hspecArgs) = splitArgs args
 
 reload :: MonadIO m => Session -> m (String, ReloadStatus)
-reload session = liftIO $ Interpreter.reload session.interpreter
+reload session = liftIO (Interpreter.reload session.interpreter) <&> \ case
+  (xs, (ys, _)) -> (xs, ys)
 
 data Summary = Summary {
   summaryExamples :: Int

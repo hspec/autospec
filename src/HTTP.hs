@@ -11,7 +11,7 @@ module HTTP (
 #endif
 ) where
 
-import           Imports hiding (encodeUtf8)
+import           Imports hiding (encodeUtf8, strip)
 
 import           System.Directory
 import qualified Data.ByteString.Lazy as L

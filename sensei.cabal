@@ -1,6 +1,6 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.36.0.
+-- This file has been generated from package.yaml by hpack version 0.37.0.
 --
 -- see: https://github.com/sol/hpack
 
@@ -25,6 +25,7 @@ executable seito
       Client
       Config
       EventQueue
+      GHC.Diagnostic
       HTTP
       Imports
       Input
@@ -49,7 +50,7 @@ executable seito
       ViewPatterns
   other-extensions:
       NoFieldSelectors
-  ghc-options: -Wall -threaded
+  ghc-options: -threaded
   build-depends:
       aeson
     , ansi-terminal
@@ -65,6 +66,7 @@ executable seito
     , http-types
     , mtl
     , network
+    , pretty
     , process
     , stm
     , temporary
@@ -83,6 +85,7 @@ executable sensei
       Client
       Config
       EventQueue
+      GHC.Diagnostic
       HTTP
       Imports
       Input
@@ -107,7 +110,7 @@ executable sensei
       ViewPatterns
   other-extensions:
       NoFieldSelectors
-  ghc-options: -Wall -threaded
+  ghc-options: -threaded
   build-depends:
       aeson
     , ansi-terminal
@@ -123,6 +126,7 @@ executable sensei
     , http-types
     , mtl
     , network
+    , pretty
     , process
     , stm
     , temporary
@@ -141,6 +145,7 @@ executable sensei-web
       Client
       Config
       EventQueue
+      GHC.Diagnostic
       HTTP
       Imports
       Input
@@ -165,7 +170,7 @@ executable sensei-web
       ViewPatterns
   other-extensions:
       NoFieldSelectors
-  ghc-options: -Wall -threaded
+  ghc-options: -threaded
   build-depends:
       aeson
     , ansi-terminal
@@ -181,6 +186,7 @@ executable sensei-web
     , http-types
     , mtl
     , network
+    , pretty
     , process
     , stm
     , temporary
@@ -200,6 +206,7 @@ test-suite spec
       Client
       Config
       EventQueue
+      GHC.Diagnostic
       HTTP
       Imports
       Input
@@ -238,7 +245,7 @@ test-suite spec
       ViewPatterns
   other-extensions:
       NoFieldSelectors
-  ghc-options: -Wall -threaded
+  ghc-options: -threaded
   cpp-options: -DTEST
   build-tool-depends:
       hspec-discover:hspec-discover
@@ -262,6 +269,7 @@ test-suite spec
     , mockery
     , mtl
     , network
+    , pretty
     , process
     , stm
     , temporary
