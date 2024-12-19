@@ -39,6 +39,7 @@ executable seito
       Session
       Trigger
       Util
+      XMonad
       Paths_sensei
   autogen-modules:
       Paths_sensei
@@ -100,6 +101,7 @@ executable sensei
       Session
       Trigger
       Util
+      XMonad
   hs-source-dirs:
       src
       driver
@@ -158,6 +160,7 @@ executable sensei-web
       Session
       Trigger
       Util
+      XMonad
   hs-source-dirs:
       src
       driver
